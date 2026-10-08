@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Explore direct mutual funds, thematic Indian equity baskets, Sovereign Gold Bonds, and fixed income instruments tailored for maximum risk-adjusted returns.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+</head>
+<body>
+
+  <!-- Top Market Ticker Ribbon -->
+  <div class="market-ticker-bar">
+    <div class="ticker-track"></div>
+  </div>
+
+  <!-- Vanguard Navigation Component -->
+  <div class="nav_component">
+    <div class="padding-global">
+      <div class="nav-wrapper">
+        <div class="nav-brand-wrapper">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large">Stackly.</span>
+          </a>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav_menu_link">Home</a>
+          <a href="investments.html" class="nav_menu_link active">Investments</a>
+          <a href="advisory.html" class="nav_menu_link">Advisory</a>
+          <a href="pricing.html" class="nav_menu_link">Pricing</a>
+          <a href="about.html" class="nav_menu_link">About</a>
+          <a href="contact.html" class="nav_menu_link">Contact</a>
+        </nav>
+        <div class="nav-button-wrapper">
+          <a href="login.html" class="button is-dark w-button" style="padding: 8px 16px; font-size: 0.8125rem;">Portal Login</a>
+          <a href="404.html" class="button w-button">Get Free Consult</a>
+          <div class="nav_button mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="investments.html" class="mobile-nav-link">Investments <span>→</span></a>
+      <a href="advisory.html" class="mobile-nav-link">Advisory <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
+      <a href="login.html" class="button is-outline w-button" style="width: 100%;">Portal Login</a>
+      <a href="404.html" class="button w-button" style="width: 100%;">Open Free Account</a>
+    </div>
+  </div>
+
+  <main class="main-wrapper is-relative">
+    <!-- SECTION 1: HERO -->
+    <section class="section-home-hero is-relative">
+      <img class="full-image-absolute" src="assets/hero-investments.webp" alt="Investments">
+      <div class="image-overlay"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-hero-wrapper">
+          <div class="home-heading-first">
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">Precision Financial Products</h1>
+            </div>
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">Engineered for Indian Markets.</h1>
+            </div>
+            <div class="text-size-medium" style="margin-top: 1rem; color: rgba(255,255,255,0.85); max-width: 600px;">
+              Access 100% direct mutual funds, quantitative thematic stock baskets, Sovereign Gold Bonds, and RBI T-bills from a single unified portal.
+            </div>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="404.html" class="button is-brand w-button">Explore All Products</a>
+              <a href="#thematic-baskets" class="button is-outline w-button">View Equity Baskets</a>
+            </div>
+          </div>
+
+          <div class="home-heading-second">
+            <div class="text-size-small">02</div>
+            <div class="text-size-small">Multi-Asset Ecosystem</div>
+            <div class="text-size-small">2,500+ Direct Funds</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ASSET CLASS MATRIX -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Asset Class Supermarket</div>
+            <h2 class="heading-style-h3">Diversified Across India's High-Performing Capital Assets</h2>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <div class="text-size-small" style="font-weight: 700; color: #00875a; text-transform: uppercase;">Direct Equities</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">NSE / BSE Delivery</h3>
+            <p style="color: #666; margin-top: 8px;">Trade top 500 Indian equities with ₹0 brokerage on delivery and trailing stop-loss algorithms.</p>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <div class="text-size-small" style="font-weight: 700; color: #00875a; text-transform: uppercase;">Direct Mutual Funds</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">Zero Commission Plans</h3>
+            <p style="color: #666; margin-top: 8px;">Invest across 44 AMCs in direct growth funds. Save ~1.5% annually in recurring distributor cuts.</p>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <div class="text-size-small" style="font-weight: 700; color: #00875a; text-transform: uppercase;">Sovereign Gold</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">RBI Sovereign Gold Bonds</h3>
+            <p style="color: #666; margin-top: 8px;">Earn 2.50% annual interest on face value + 100% tax-free capital gains at maturity. Zero GST.</p>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <div class="text-size-small" style="font-weight: 700; color: #00875a; text-transform: uppercase;">Fixed Income</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">Govt T-Bills & AAA Bonds</h3>
+            <p style="color: #666; margin-top: 8px;">Lock in predictable yields with 91/182/364-day Treasury Bills and state development loans.</p>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <div class="text-size-small" style="font-weight: 700; color: #00875a; text-transform: uppercase;">Tax Savings</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">ELSS & NPS Allocations</h3>
+            <p style="color: #666; margin-top: 8px;">Save up to ₹46,800 under Section 80C with the shortest 3-year lock-in across Indian tax instruments.</p>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <div class="text-size-small" style="font-weight: 700; color: #00875a; text-transform: uppercase;">Global Feeders</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">US & Global Tech Baskets</h3>
+            <p style="color: #666; margin-top: 8px;">Participate in global innovation under the RBI LRS remittance route with automatic INR conversions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THEMATIC EQUITY BASKETS -->
+    <section id="thematic-baskets" class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Quant Research</div>
+            <h2 class="heading-style-h3">Curated Thematic Equity Portfolios</h2>
+          </div>
+
+          <div class="about-wrapper">
+            <div class="value-cell" style="background-color: #1a1a1a;">
+              <div class="value-cell-title">Digital Bharat Titan<br><span style="font-size: 0.8125rem; color: #00d084;">3-Yr CAGR: 28.4%</span></div>
+              <div class="value-description-absolute">
+                <div>Leading tech innovators, telecom providers, and FinTech leaders driving India's digital economy. Min: ₹15,000.</div>
+              </div>
+            </div>
+
+            <div class="value-cell" style="background-color: #1a1a1a;">
+              <div class="value-cell-title">Green EV Mobility<br><span style="font-size: 0.8125rem; color: #00d084;">3-Yr CAGR: 32.1%</span></div>
+              <div class="value-description-absolute">
+                <div>Pure-play exposure to EV OEMs, battery chemicals, and clean renewable infrastructure. Min: ₹20,000.</div>
+              </div>
+            </div>
+
+            <div class="value-cell" style="background-color: #1a1a1a;">
+              <div class="value-cell-title">Make In India 2030<br><span style="font-size: 0.8125rem; color: #00d084;">3-Yr CAGR: 24.8%</span></div>
+              <div class="value-description-absolute">
+                <div>Capital goods, defense electronics, and PLI beneficiaries driving domestic manufacturing. Min: ₹25,000.</div>
+              </div>
+            </div>
+
+            <div class="value-cell" style="background-color: #1a1a1a;">
+              <div class="value-cell-title">Dividend Bluechips<br><span style="font-size: 0.8125rem; color: #00d084;">3-Yr CAGR: 22.5%</span></div>
+              <div class="value-description-absolute">
+                <div>Low-volatility large caps with rock-solid balance sheets and consistent dividend payouts. Min: ₹10,000.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ASSET ALLOCATION SIMULATOR -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Portfolio Architect</div>
+            <h2 class="heading-style-h3">Dynamic Multi-Asset Allocation Engine</h2>
+          </div>
+
+          <div class="col-span-12">
+            <div class="calc-wrapper">
+              <div class="calc-grid">
+                <div>
+                  <div style="margin-bottom: 20px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                      <span class="text-size-small text-weight-semibold">Large & Mid Cap Equities</span>
+                      <span class="text-size-small">60%</span>
+                    </div>
+                    <input type="range" class="calc-slider" value="60" disabled>
+                  </div>
+
+                  <div style="margin-bottom: 20px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                      <span class="text-size-small text-weight-semibold">High-Grade Bonds & Fixed Deposits</span>
+                      <span class="text-size-small">25%</span>
+                    </div>
+                    <input type="range" class="calc-slider" value="25" disabled>
+                  </div>
+
+                  <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                      <span class="text-size-small text-weight-semibold">Sovereign Gold Bonds (SGB)</span>
+                      <span class="text-size-small">15%</span>
+                    </div>
+                    <input type="range" class="calc-slider" value="15" disabled>
+                  </div>
+                </div>
+
+                <div class="calc-result-box">
+                  <div class="text-size-small" style="text-transform: uppercase; color: #888;">Expected Risk & Return</div>
+                  <div class="heading-style-h3" style="font-weight: 600; margin-top: 4px;">Balanced Growth (14.8% CAGR)</div>
+                  <div style="color: #666; font-size: 0.875rem;">Max Historical Drawdown: -14.2% (vs -38% Nifty in 2020). High Sharpe ratio of 1.62.</div>
+                  <a href="404.html" class="button is-dark w-button" style="width: 100%; text-align: center;">Apply This Allocation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: SCREENING METHODOLOGY -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Rigorous Filtering</div>
+            <h2 class="heading-style-h3">The Stackly 4-Layer Stock Selection Screener</h2>
+          </div>
+
+          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px;">
+            <div class="text-size-large" style="font-weight: 700; color: #222;">01</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">Forensic Auditing</h3>
+            <p style="color: #666; margin-top: 8px;">Altman Z and Beneish M-scores eliminate promoter pledge and governance risks.</p>
+          </div>
+
+          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px;">
+            <div class="text-size-large" style="font-weight: 700; color: #222;">02</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">High ROCE > 18%</h3>
+            <p style="color: #666; margin-top: 8px;">Consistent capital return metrics over 5-year rolling macroeconomic cycles.</p>
+          </div>
+
+          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px;">
+            <div class="text-size-large" style="font-weight: 700; color: #222;">03</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">Pricing Power</h3>
+            <p style="color: #666; margin-top: 8px;">Sustained operating margins during inflationary cycles and expansionary tailwinds.</p>
+          </div>
+
+          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px;">
+            <div class="text-size-large" style="font-weight: 700; color: #222;">04</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">Margin of Safety</h3>
+            <p style="color: #666; margin-top: 8px;">DCF valuation models prevent buying quality companies at bubble peak valuations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: BENCHMARK COMPARISON TABLE -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Audited Track Record</div>
+            <h2 class="heading-style-h3">Comparative Performance Benchmark</h2>
+          </div>
+
+          <div class="col-span-12">
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Strategy / Asset</th>
+                    <th>1-Yr CAGR</th>
+                    <th>3-Yr CAGR</th>
+                    <th>5-Yr CAGR</th>
+                    <th>Volatility</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="background: #fafafa; font-weight: 600;">
+                    <td><strong>Stackly Multi-Cap Alpha</strong></td>
+                    <td style="color: #00875a;">+31.4%</td>
+                    <td style="color: #00875a;">+24.8%</td>
+                    <td style="color: #00875a;">+18.4%</td>
+                    <td>12.8%</td>
+                  </tr>
+                  <tr>
+                    <td>NIFTY 50 TRI (Benchmark)</td>
+                    <td>+22.1%</td>
+                    <td>+16.4%</td>
+                    <td>+13.2%</td>
+                    <td>15.6%</td>
+                  </tr>
+                  <tr>
+                    <td>Regular Mutual Fund Category Average</td>
+                    <td>+20.4%</td>
+                    <td>+14.9%</td>
+                    <td>+11.8%</td>
+                    <td>16.8%</td>
+                  </tr>
+                  <tr>
+                    <td>Traditional Bank Fixed Deposit (FD)</td>
+                    <td>+7.1%</td>
+                    <td>+6.8%</td>
+                    <td>+6.5%</td>
+                    <td>0.0%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: DOWNSIDE VOLATILITY PROTECTION -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Capital Preservation</div>
+            <h2 class="heading-style-h3">Institutional Downside Protection Mechanisms</h2>
+          </div>
+
+          <div class="col-span-4" style="padding: 2rem; background: #f9f9f9; border-radius: 4px;">
+            <h3 class="heading-style-h4">Trailing Stop-Loss Guard</h3>
+            <p style="color: #666; margin-top: 8px;">Dynamic volatility sensors reallocate to liquid debt when India VIX spikes sharply.</p>
+          </div>
+
+          <div class="col-span-4" style="padding: 2rem; background: #f9f9f9; border-radius: 4px;">
+            <h3 class="heading-style-h4">10% Scrip Exposure Limit</h3>
+            <p style="color: #666; margin-top: 8px;">No single stock exceeds 10% of portfolio value, eliminating company-specific black swans.</p>
+          </div>
+
+          <div class="col-span-4" style="padding: 2rem; background: #f9f9f9; border-radius: 4px;">
+            <h3 class="heading-style-h4">Tax-Loss Harvesting</h3>
+            <p style="color: #666; margin-top: 8px;">Real-time offset of short-term gains before March 31, saving up to 20% in capital gains tax.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CTA BANNER -->
+    <section class="section-home-cta is-relative">
+      <img src="assets/cta-investments.webp" alt="Invest Today" class="full-image-absolute">
+      <div class="image-overlay" style="opacity: 0.7;"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-cta-wrapper">
+          <div class="max-width-large text-align-center">
+            <div class="cta-wrapper">
+              <h2 class="heading-style-h2">Start Investing in India's High-Growth Equities</h2>
+              <div class="text-size-regular">Open your Demat and Wealth Account in under 3 minutes via paperless DigiLocker KYC.</div>
+              <a href="404.html" class="button w-button">Open Free Demat Account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Vanguard Footer -->
+  <footer id="Footer" class="section-home-footer background-color-primary">
+    <div class="padding-global">
+      <div class="section-grid-x12 margin-bottom">
+        <div class="footer-heading">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 1rem;">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large" style="font-size: 1.75rem;">Stackly.</span>
+          </a>
+          <p class="text-size-small" style="color: #aaaaaa; line-height: 1.6;">
+            Institutional wealth management, direct mutual funds, and quantitative PMS engineered for India's high-net-worth investors.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.75rem; color: #777; line-height: 1.5;">
+            SEBI Registered RIA: INA200018420<br>
+            AMFI Registered Mutual Fund: ARN-194820<br>
+            CIN: U67190MH2024PTC394820
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Investments</div>
+            <div class="footer-link-cell">
+              <a href="investments.html" class="text-style-link is-white">Direct Mutual Funds</a>
+              <a href="investments.html" class="text-style-link is-white">Equity Baskets</a>
+              <a href="investments.html" class="text-style-link is-white">Sovereign Gold Bonds</a>
+              <a href="investments.html" class="text-style-link is-white">Corporate Bonds</a>
+              <a href="404.html" class="text-style-link is-white">US Tech Feeder</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Solutions</div>
+            <div class="footer-link-cell">
+              <a href="advisory.html" class="text-style-link is-white">Discretionary PMS</a>
+              <a href="advisory.html" class="text-style-link is-white">Family Office</a>
+              <a href="advisory.html" class="text-style-link is-white">NRI Wealth Desk</a>
+              <a href="advisory.html" class="text-style-link is-white">Tax Harvesting</a>
+              <a href="pricing.html" class="text-style-link is-white">Plans & Pricing</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Company</div>
+            <div class="footer-link-cell">
+              <a href="about.html" class="text-style-link is-white">About Us</a>
+              <a href="about.html" class="text-style-link is-white">Leadership Team</a>
+              <a href="contact.html" class="text-style-link is-white">Contact & Lounges</a>
+              <a href="404.html" class="text-style-link is-white">Careers</a>
+              <a href="404.html" class="text-style-link is-white">Press & Media</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Security & Legal</div>
+            <div class="footer-link-cell">
+              <a href="404.html" class="text-style-link is-white">SEBI Disclosures</a>
+              <a href="404.html" class="text-style-link is-white">Privacy Policy</a>
+              <a href="404.html" class="text-style-link is-white">Terms of Service</a>
+              <a href="404.html" class="text-style-link is-white">SCORES Grievance</a>
+              <a href="404.html" class="text-style-link is-white">Cybersecurity Audit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-divider"></div>
+
+      <div class="footer-credential-wrapper is-margined-vertical">
+        <div>
+          © 2026 Stackly Wealth Technologies Pvt. Ltd. All rights reserved.
+        </div>
+        <div class="footer-credential-cell">
+          <a href="404.html" class="text-style-link is-white">Style Guide</a>
+          <a href="404.html" class="text-style-link is-white">Licensing</a>
+          <a href="404.html" class="text-style-link is-white">Regulatory Filings</a>
+        </div>
+      </div>
+
+      <div style="font-size: 0.6875rem; color: #666666; line-height: 1.6; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+        *Disclaimer: Mutual fund investments are subject to market risks. Read all scheme related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

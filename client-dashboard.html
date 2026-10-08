@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Manage your Indian equity portfolio, direct mutual fund SIPs, Sovereign Gold Bonds, and track compounding wealth.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+</head>
+<body>
+
+  <div class="dash-layout">
+    <!-- Sidebar -->
+    <aside class="dash-sidebar">
+      <div>
+        <div class="dash-sidebar-brand">
+          <a href="index.html" class="nav-brand" style="font-size: 1.25rem;">
+            <img src="assets/logo.webp" alt="Stackly" class="dash-brand-logo">
+            <span>Stackly.</span>
+          </a>
+          <span class="dash-role-tag role-client">Investor</span>
+        </div>
+
+        <nav class="dash-nav-menu">
+          <a href="#overview" class="dash-nav-item active">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="9"></rect>
+              <rect x="14" y="3" width="7" height="5"></rect>
+              <rect x="14" y="12" width="7" height="9"></rect>
+              <rect x="3" y="16" width="7" height="5"></rect>
+            </svg>
+            <span>Overview</span>
+          </a>
+          <a href="#holdings" class="dash-nav-item">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            <span>Holdings</span>
+          </a>
+          <a href="#sips" class="dash-nav-item">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <polyline points="23 20 23 14 17 14"></polyline>
+              <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+            </svg>
+            <span>Active SIPs</span>
+          </a>
+          <a href="#watchlist" class="dash-nav-item">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Watchlist</span>
+          </a>
+          <a href="#transactions" class="dash-nav-item">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span>Transactions</span>
+          </a>
+          <a href="index.html" class="dash-nav-item">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Public Site</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="dash-sidebar-footer">
+        <div class="dash-user-card">
+          <div class="dash-user-avatar" id="dash-avatar-initials">RS</div>
+          <div class="dash-user-info">
+            <div class="dash-user-name" id="dash-display-name">Rahul Sharma</div>
+            <div class="dash-user-id" id="dash-display-id">STK-IN-894210</div>
+          </div>
+        </div>
+        <button class="dash-logout-btn" onclick="window.stacklyLogout()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          <span>Secure Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dash-main">
+      <header class="dash-topbar">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <button class="dash-mobile-menu-btn" style="display: none; padding: 6px 10px; background: #222; color: #fff; border-radius: 4px; align-items: center;" aria-label="Toggle Menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div>
+            <div class="dash-greeting-title" id="dash-topbar-greeting">Welcome back, Rahul Sharma</div>
+            <div class="dash-greeting-sub">SEBI Verified Demat • Direct Mutual Funds • CDSL Active</div>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <span class="status-pill status-active" style="display: flex; align-items: center; gap: 6px;">
+            <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: currentColor;"></span>
+            NSE / BSE LIVE
+          </span>
+          <button class="button is-dark w-button btn-open-quick-invest" style="padding: 8px 16px; font-size: 0.8125rem; display: flex; align-items: center; gap: 6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            Quick Invest
+          </button>
+        </div>
+      </header>
+
+      <div class="dash-content">
+        <!-- Section: Overview -->
+        <section id="overview" class="dash-section">
+          <!-- Stat Cards -->
+          <div class="dash-metrics-grid">
+            <div class="dash-stat-card">
+              <span class="dash-stat-title">Total Net Worth</span>
+              <div class="dash-stat-value">₹ 42,85,600</div>
+              <div class="dash-stat-badge badge-up">+₹ 8,15,200 (+23.4% Return)</div>
+            </div>
+
+            <div class="dash-stat-card">
+              <span class="dash-stat-title">Today's Day Gain</span>
+              <div class="dash-stat-value">+ ₹ 34,280</div>
+              <div class="dash-stat-badge badge-up">+0.81% vs Nifty 50 (+0.65%)</div>
+            </div>
+
+            <div class="dash-stat-card">
+              <span class="dash-stat-title">Monthly SIP Outflow</span>
+              <div class="dash-stat-value">₹ 45,000</div>
+              <div class="dash-stat-badge badge-neutral">4 Direct MF Mandates</div>
+            </div>
+
+            <div class="dash-stat-card">
+              <span class="dash-stat-title">Liquid Cash Balance</span>
+              <div class="dash-stat-value">₹ 1,50,000</div>
+              <div class="dash-stat-badge badge-neutral">Yielding 7.1% in Overnight Fund</div>
+            </div>
+          </div>
+
+        <!-- Chart & Allocation -->
+        <div class="dash-chart-grid">
+          <div class="dash-panel">
+            <div class="dash-panel-header">
+              <div>
+                <h3 class="dash-panel-title">Portfolio Wealth Growth</h3>
+                <div class="text-size-tiny" style="color: #888;">Time-Weighted Return Rate (TWRR)</div>
+              </div>
+              <div class="dash-panel-tabs">
+                <button class="dash-tab-btn chart-time-btn" data-time="1M">1M</button>
+                <button class="dash-tab-btn chart-time-btn" data-time="3M">3M</button>
+                <button class="dash-tab-btn chart-time-btn" data-time="6M">6M</button>
+                <button class="dash-tab-btn chart-time-btn active" data-time="1Y">1Y</button>
+                <button class="dash-tab-btn chart-time-btn" data-time="3Y">3Y</button>
+                <button class="dash-tab-btn chart-time-btn" data-time="ALL">ALL</button>
+              </div>
+            </div>
+            <div class="chart-container">
+              <canvas id="portfolioChartCanvas"></canvas>
+            </div>
+          </div>
+
+          <div class="dash-panel">
+            <div class="dash-panel-header">
+              <h3 class="dash-panel-title">Asset Allocation</h3>
+              <span class="status-pill status-active">Optimal</span>
+            </div>
+
+            <div>
+              <div class="allocation-item">
+                <div class="allocation-info">
+                  <span>Large & Mid Cap Equities</span>
+                  <strong>45% (₹ 19.28 L)</strong>
+                </div>
+                <div class="allocation-track"><div class="allocation-fill" style="width: 45%; background: #222222;"></div></div>
+              </div>
+
+              <div class="allocation-item">
+                <div class="allocation-info">
+                  <span>Small-Cap Alpha Baskets</span>
+                  <strong>25% (₹ 10.71 L)</strong>
+                </div>
+                <div class="allocation-track"><div class="allocation-fill" style="width: 25%; background: #00875a;"></div></div>
+              </div>
+
+              <div class="allocation-item">
+                <div class="allocation-info">
+                  <span>Sovereign Gold Bonds (SGB)</span>
+                  <strong>15% (₹ 6.42 L)</strong>
+                </div>
+                <div class="allocation-track"><div class="allocation-fill" style="width: 15%; background: #d97706;"></div></div>
+              </div>
+
+              <div class="allocation-item">
+                <div class="allocation-info">
+                  <span>Govt T-Bills & High-Yield Debt</span>
+                  <strong>10% (₹ 4.28 L)</strong>
+                </div>
+                <div class="allocation-track"><div class="allocation-fill" style="width: 10%; background: #2563eb;"></div></div>
+              </div>
+
+              <div class="allocation-item">
+                <div class="allocation-info">
+                  <span>Liquid Overnight Cash</span>
+                  <strong>5% (₹ 2.14 L)</strong>
+                </div>
+                <div class="allocation-track"><div class="allocation-fill" style="width: 5%; background: #888888;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <!-- Section: Holdings -->
+        <section id="holdings" class="dash-table-panel">
+          <div class="dash-table-header">
+            <div>
+              <h3 class="dash-panel-title">Demat & Portfolio Holdings</h3>
+              <div class="text-size-tiny" style="color: #888;">Verified CDSL / NSDL Linked Holdings</div>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <a href="404.html" class="button is-dark w-button" style="padding: 6px 12px; font-size: 0.75rem;">Download CAS Sheet</a>
+              <a href="404.html" class="button is-outline w-button" style="padding: 6px 12px; font-size: 0.75rem; color: #222; border-color: #ccc;">Tax Harvesting Pack</a>
+            </div>
+          </div>
+
+          <div style="overflow-x: auto;">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Asset / Security</th>
+                  <th>ISIN / Category</th>
+                  <th>Units / Qty</th>
+                  <th>Avg. Buy Price</th>
+                  <th>Current Value</th>
+                  <th>Net P&L</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Parag Parikh Flexi Cap Direct</strong></td>
+                  <td><code>INF879O01019</code> • Equity Multi-Cap</td>
+                  <td>5,420 Units</td>
+                  <td>₹ 52.40</td>
+                  <td><strong>₹ 3,92,400</strong></td>
+                  <td><span class="status-pill status-active">+ 38.2%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>HDFC Bank Ltd. (EQ)</strong></td>
+                  <td><code>INE040A01034</code> • Large Cap Private Bank</td>
+                  <td>450 Shares</td>
+                  <td>₹ 1,480.00</td>
+                  <td><strong>₹ 7,65,000</strong></td>
+                  <td><span class="status-pill status-active">+ 14.8%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Tata Consultancy Services Ltd.</strong></td>
+                  <td><code>INE467B01029</code> • Indian IT Titan</td>
+                  <td>180 Shares</td>
+                  <td>₹ 3,650.00</td>
+                  <td><strong>₹ 7,83,000</strong></td>
+                  <td><span class="status-pill status-active">+ 19.2%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Sovereign Gold Bond 2026-I</strong></td>
+                  <td><code>IN0020260012</code> • SGB (RBI Sovereign)</td>
+                  <td>85 Grams</td>
+                  <td>₹ 6,800.00</td>
+                  <td><strong>₹ 6,49,825</strong></td>
+                  <td><span class="status-pill status-active">+ 12.4%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Section: Active SIPs -->
+        <section id="sips" class="dash-table-panel">
+          <div class="dash-table-header">
+            <div>
+              <h3 class="dash-panel-title">Active Systematic Investment Plans (SIP)</h3>
+              <div class="text-size-tiny" style="color: #888;">Auto-debited via HDFC Bank e-NACH</div>
+            </div>
+            <button class="button is-dark w-button btn-open-quick-invest" style="padding: 6px 12px; font-size: 0.75rem;">+ Start New SIP</button>
+          </div>
+
+          <div style="overflow-x: auto;">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Scheme Name</th>
+                  <th>Monthly Amount</th>
+                  <th>Execution Date</th>
+                  <th>Total Invested</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong class="sip-fund-name">Parag Parikh Flexi Cap Direct</strong></td>
+                  <td><strong>₹ 15,000</strong></td>
+                  <td>5th of every month</td>
+                  <td>₹ 3,60,000</td>
+                  <td><span class="status-pill status-active">Active</span></td>
+                  <td><button class="btn-table-action btn-sip-toggle" style="border: 1px solid #ccc; background: #fff;">Pause</button></td>
+                </tr>
+                <tr>
+                  <td><strong class="sip-fund-name">Mirae Asset Large & Midcap Direct</strong></td>
+                  <td><strong>₹ 15,000</strong></td>
+                  <td>10th of every month</td>
+                  <td>₹ 3,30,000</td>
+                  <td><span class="status-pill status-active">Active</span></td>
+                  <td><button class="btn-table-action btn-sip-toggle" style="border: 1px solid #ccc; background: #fff;">Pause</button></td>
+                </tr>
+                <tr>
+                  <td><strong class="sip-fund-name">Nippon India Small Cap Direct</strong></td>
+                  <td><strong>₹ 10,000</strong></td>
+                  <td>15th of every month</td>
+                  <td>₹ 2,20,000</td>
+                  <td><span class="status-pill status-active">Active</span></td>
+                  <td><button class="btn-table-action btn-sip-toggle" style="border: 1px solid #ccc; background: #fff;">Pause</button></td>
+                </tr>
+                <tr>
+                  <td><strong class="sip-fund-name">HDFC NIFTY 50 Index Fund Direct</strong></td>
+                  <td><strong>₹ 5,000</strong></td>
+                  <td>20th of every month</td>
+                  <td>₹ 1,10,000</td>
+                  <td><span class="status-pill status-active">Active</span></td>
+                  <td><button class="btn-table-action btn-sip-toggle" style="border: 1px solid #ccc; background: #fff;">Pause</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Section: Watchlist -->
+        <section class="dash-panel" id="watchlist">
+          <div class="dash-panel-header">
+            <div>
+              <h3 class="dash-panel-title">Real-Time Indian Market Watchlist</h3>
+              <div class="text-size-tiny" style="color: #888;">Live NSE/BSE Streaming Ticks</div>
+            </div>
+            <a href="404.html" class="button is-dark w-button" style="padding: 6px 12px; font-size: 0.75rem;">+ Add Scrip</a>
+          </div>
+          <div class="watchlist-grid" id="dash-watchlist-grid"></div>
+        </section>
+
+        <!-- Section: Transactions Table -->
+        <section class="dash-table-panel" id="transactions">
+          <div class="dash-table-header">
+            <div>
+              <h3 class="dash-panel-title">Recent Transactions & Dividend Ledger</h3>
+              <div class="text-size-tiny" style="color: #888;">SEBI Settled Audit Trail</div>
+            </div>
+            <input type="text" id="transaction-search-input" class="dash-search-input" placeholder="Search transactions...">
+          </div>
+
+          <div style="overflow-x: auto;">
+            <table class="dash-table">
+              <thead>
+                <tr>
+                  <th>Txn ID</th>
+                  <th>Date</th>
+                  <th>Particulars</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody class="transaction-table-body">
+                <tr>
+                  <td><code>TXN-89421</code></td>
+                  <td>05 Oct 2026</td>
+                  <td>Parag Parikh Flexi Cap Direct (SIP Auto-Debit)</td>
+                  <td><span style="color: #00875a; font-weight: 600;">BUY / SIP</span></td>
+                  <td><strong>₹ 15,000</strong></td>
+                  <td><span class="status-pill status-completed">Settled (T+1)</span></td>
+                </tr>
+                <tr>
+                  <td><code>TXN-89420</code></td>
+                  <td>01 Oct 2026</td>
+                  <td>TCS Interim Dividend Payout (Bank Credit)</td>
+                  <td><span style="color: #d97706; font-weight: 600;">DIVIDEND</span></td>
+                  <td><strong>₹ 4,850</strong></td>
+                  <td><span class="status-pill status-completed">Direct Bank Credit</span></td>
+                </tr>
+                <tr>
+                  <td><code>TXN-89419</code></td>
+                  <td>28 Sep 2026</td>
+                  <td>Sovereign Gold Bond 2026-I (Tranche Allocation)</td>
+                  <td><span style="color: #2563eb; font-weight: 600;">SGB BUY</span></td>
+                  <td><strong>₹ 76,450</strong></td>
+                  <td><span class="status-pill status-completed">Allotted (RBI)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Quick Invest Modal -->
+  <div class="dash-modal-backdrop" id="quick-invest-modal">
+    <div class="dash-modal-card">
+      <div class="dash-modal-header">
+        <h3 class="dash-modal-title">Execute Quick Investment</h3>
+        <span class="dash-modal-close" id="quick-invest-close" style="display: flex; align-items: center; cursor: pointer;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+      </div>
+
+      <form id="quick-invest-form">
+        <div class="form-group">
+          <label class="form-label" for="invest-asset-select">Select Fund / Asset</label>
+          <select class="w-select" id="invest-asset-select">
+            <option value="Parag Parikh Flexi Cap Direct">Parag Parikh Flexi Cap Direct Plan (Equity)</option>
+            <option value="Stackly Digital Bharat Basket">Stackly Digital Bharat Basket (Equity Basket)</option>
+            <option value="Sovereign Gold Bond 2026">Sovereign Gold Bond 2026-II (SGB)</option>
+            <option value="HDFC Liquid Direct Fund">HDFC Liquid Direct Fund (Overnight 7.1%)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="invest-type-select">Investment Type</label>
+          <select class="w-select" id="invest-type-select">
+            <option value="Monthly SIP">Monthly SIP (Auto e-NACH)</option>
+            <option value="One-Time Lumpsum">One-Time Lumpsum (UPI / NetBanking)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="invest-amount-input">Amount (₹ INR)</label>
+          <input type="number" id="invest-amount-input" class="w-input" value="25000" min="500" step="500" required>
+        </div>
+
+        <button type="submit" class="button is-dark w-button is-full-width" style="margin-top: 10px;">
+          Confirm & Place Order
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/client-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Get in touch with Stackly wealth advisory team, branch offices across India, NRI desk, or file support inquiries. Toll-free 1800-890-1234.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+</head>
+<body>
+
+  <!-- Top Market Ticker Ribbon -->
+  <div class="market-ticker-bar">
+    <div class="ticker-track"></div>
+  </div>
+
+  <!-- Vanguard Navigation Component -->
+  <div class="nav_component">
+    <div class="padding-global">
+      <div class="nav-wrapper">
+        <div class="nav-brand-wrapper">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large">Stackly.</span>
+          </a>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav_menu_link">Home</a>
+          <a href="investments.html" class="nav_menu_link">Investments</a>
+          <a href="advisory.html" class="nav_menu_link">Advisory</a>
+          <a href="pricing.html" class="nav_menu_link">Pricing</a>
+          <a href="about.html" class="nav_menu_link">About</a>
+          <a href="contact.html" class="nav_menu_link active">Contact</a>
+        </nav>
+        <div class="nav-button-wrapper">
+          <a href="login.html" class="button is-dark w-button" style="padding: 8px 16px; font-size: 0.8125rem;">Portal Login</a>
+          <a href="404.html" class="button w-button">Get Free Consult</a>
+          <div class="nav_button mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="investments.html" class="mobile-nav-link">Investments <span>→</span></a>
+      <a href="advisory.html" class="mobile-nav-link">Advisory <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link active">Contact <span>→</span></a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
+      <a href="login.html" class="button is-outline w-button" style="width: 100%;">Portal Login</a>
+      <a href="404.html" class="button w-button" style="width: 100%;">Open Free Account</a>
+    </div>
+  </div>
+
+  <main class="main-wrapper is-relative">
+    <!-- SECTION 1: HERO -->
+    <section class="section-home-hero is-relative">
+      <img class="full-image-absolute" src="assets/hero-contact.webp" alt="Contact Us">
+      <div class="image-overlay"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-hero-wrapper">
+          <div class="home-heading-first">
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">Always Accessible</h1>
+            </div>
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">to Navigate Your Wealth.</h1>
+            </div>
+            <div class="text-size-medium" style="margin-top: 1rem; color: rgba(255,255,255,0.85); max-width: 600px;">
+              Get direct access to our Certified Financial Planners, pan-India branch lounges, and specialized NRI desks.
+            </div>
+          </div>
+
+          <div class="home-heading-second">
+            <div class="text-size-small">06</div>
+            <div class="text-size-small">Client Concierge</div>
+            <div class="text-size-small">Toll-Free: 1800-890-1234</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: INQUIRY FORM -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Direct Inquiry</div>
+            <h2 class="heading-style-h3">Send Us a Direct Message</h2>
+          </div>
+
+          <div class="col-span-12">
+            <div class="calc-wrapper" style="background: #ffffff; padding: 2.5rem; border: 1px solid #e5e7eb; border-radius: 6px;">
+              <form data-ajax="true">
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Full Name *</label>
+                    <input type="text" class="w-input" placeholder="e.g. Rahul Sharma" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Contact Number *</label>
+                    <input type="tel" class="w-input" placeholder="e.g. +91 98765 43210" required>
+                  </div>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" class="w-input" placeholder="e.g. rahul@example.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Discussion Topic</label>
+                    <select class="w-select">
+                      <option>General Wealth Planning</option>
+                      <option>Discretionary PMS (₹50L+)</option>
+                      <option>Direct Mutual Fund Migration</option>
+                      <option>NRI Taxation & Remittance</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                  <label class="form-label">Your Message *</label>
+                  <textarea class="w-input" placeholder="Tell us about your portfolio or specific financial questions..." required></textarea>
+                </div>
+
+                <button type="submit" class="button is-dark w-button is-full-width">Submit Inquiry</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PAN-INDIA LOUNGES -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Branch Directory</div>
+            <h2 class="heading-style-h3">Visit Our Physical Client Lounges</h2>
+          </div>
+
+          <div class="col-span-3" style="padding: 2rem; border: 1px solid #e4e4e4; border-radius: 4px;">
+            <h3 class="heading-style-h4">Mumbai (BKC)</h3>
+            <p style="color: #666; margin-top: 8px;">Level 14, Tower B, The Capital, G Block, BKC, Mumbai - 400051</p>
+            <div style="font-weight: 600; margin-top: 12px;">+91 (022) 6890-1200</div>
+          </div>
+
+          <div class="col-span-3" style="padding: 2rem; border: 1px solid #e4e4e4; border-radius: 4px;">
+            <h3 class="heading-style-h4">Bengaluru</h3>
+            <p style="color: #666; margin-top: 8px;">Stackly Tech Hub, 100 Feet Road, HAL 2nd Stage, Bengaluru - 560038</p>
+            <div style="font-weight: 600; margin-top: 12px;">+91 (080) 4590-3400</div>
+          </div>
+
+          <div class="col-span-3" style="padding: 2rem; border: 1px solid #e4e4e4; border-radius: 4px;">
+            <h3 class="heading-style-h4">New Delhi</h3>
+            <p style="color: #666; margin-top: 8px;">Regal Building, 3rd Floor, Connaught Place, New Delhi - 110001</p>
+            <div style="font-weight: 600; margin-top: 12px;">+91 (011) 2334-8900</div>
+          </div>
+
+          <div class="col-span-3" style="padding: 2rem; border: 1px solid #e4e4e4; border-radius: 4px;">
+            <h3 class="heading-style-h4">Hyderabad</h3>
+            <p style="color: #666; margin-top: 8px;">Cyber Towers, 6th Floor, Hitec City, Madhapur, Hyderabad - 500081</p>
+            <div style="font-weight: 600; margin-top: 12px;">+91 (040) 6790-5500</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: NRI GLOBAL DESK -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Cross-Border</div>
+            <h2 class="heading-style-h3">Dedicated Global NRI Wealth Desks</h2>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">Middle East (GST)</h3>
+            <p style="color: #666; margin-top: 8px;">Dubai, Abu Dhabi, Doha, Riyadh (Sunday-Thursday desk).</p>
+            <div style="font-weight: 600; margin-top: 12px;">Email: gulf.nri@stackly.in</div>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">North America (EST/PST)</h3>
+            <p style="color: #666; margin-top: 8px;">Silicon Valley, NYC, Seattle, Toronto (DTAA treaty alignment).</p>
+            <div style="font-weight: 600; margin-top: 12px;">Email: us.nri@stackly.in</div>
+          </div>
+
+          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">Asia-Pacific (SGT)</h3>
+            <p style="color: #666; margin-top: 8px;">Singapore, Hong Kong, Sydney, Tokyo (India growth allocation).</p>
+            <div style="font-weight: 600; margin-top: 12px;">Email: apac.nri@stackly.in</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GRIEVANCE REDRESSAL -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">SEBI Compliance</div>
+            <h2 class="heading-style-h3">Investor Grievance Redressal Protocol</h2>
+          </div>
+
+          <div class="col-span-4" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px;">
+            <div class="text-size-small" style="font-weight: 700; color: #222;">Level 1</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">Customer Support Desk</h3>
+            <p style="color: #666; margin-top: 8px;">Email support@stackly.in. Resolution within 24-48 business hours.</p>
+          </div>
+
+          <div class="col-span-4" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px;">
+            <div class="text-size-small" style="font-weight: 700; color: #222;">Level 2</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">Grievance Officer</h3>
+            <p style="color: #666; margin-top: 8px;">Email grievances@stackly.in. Escalation resolved within 7 working days.</p>
+          </div>
+
+          <div class="col-span-4" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px;">
+            <div class="text-size-small" style="font-weight: 700; color: #222;">Level 3</div>
+            <h3 class="heading-style-h4" style="margin-top: 8px;">SEBI SCORES Portal</h3>
+            <p style="color: #666; margin-top: 8px;">Lodge complaints directly on scores.sebi.gov.in with SEBI surveillance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: LIVE CHAT WIDGET -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12">
+            <div class="calc-wrapper" style="background: #fff; text-align: center;">
+              <h2 class="heading-style-h3">Need Immediate Technical Support?</h2>
+              <p style="color: #666; margin: 12px 0 24px;">Our live chat specialists are available 24/7 inside the investor portal.</p>
+              <a href="404.html" class="button is-dark w-button">Launch Live Portal Chat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PRESS & B2B -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-6" style="padding: 2rem; background: #f9f9f9; border-radius: 4px;">
+            <h3 class="heading-style-h4">Press & Media Commentaries</h3>
+            <p style="color: #666; margin-top: 8px;">For editorial interviews and macroeconomic quotes with our CIO.</p>
+            <div style="font-weight: 600; color: #222; margin-top: 12px;">press@stackly.in</div>
+          </div>
+
+          <div class="col-span-6" style="padding: 2rem; background: #f9f9f9; border-radius: 4px;">
+            <h3 class="heading-style-h4">Corporate Treasury Partnerships</h3>
+            <p style="color: #666; margin-top: 8px;">For treasury management APIs and employee wealth wellness programs.</p>
+            <div style="font-weight: 600; color: #222; margin-top: 12px;">partnerships@stackly.in</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: EMERGENCY HOTLINE -->
+    <section class="section-home-cta is-relative">
+      <img src="assets/cta-contact.webp" alt="Emergency Security" class="full-image-absolute">
+      <div class="image-overlay" style="opacity: 0.7;"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-cta-wrapper">
+          <div class="max-width-large text-align-center">
+            <div class="cta-wrapper">
+              <h2 class="heading-style-h2">Emergency Account Freeze Desk</h2>
+              <div class="text-size-regular">If you suspect unauthorized access, immediately lock your account via our 24/7 hotline.</div>
+              <a href="404.html" class="button w-button">Emergency Lock: 1800-890-1234</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Vanguard Footer -->
+  <footer id="Footer" class="section-home-footer background-color-primary">
+    <div class="padding-global">
+      <div class="section-grid-x12 margin-bottom">
+        <div class="footer-heading">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 1rem;">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large" style="font-size: 1.75rem;">Stackly.</span>
+          </a>
+          <p class="text-size-small" style="color: #aaaaaa; line-height: 1.6;">
+            Institutional wealth management, direct mutual funds, and quantitative PMS engineered for India's high-net-worth investors.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.75rem; color: #777; line-height: 1.5;">
+            SEBI Registered RIA: INA200018420<br>
+            AMFI Registered Mutual Fund: ARN-194820<br>
+            CIN: U67190MH2024PTC394820
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Investments</div>
+            <div class="footer-link-cell">
+              <a href="investments.html" class="text-style-link is-white">Direct Mutual Funds</a>
+              <a href="investments.html" class="text-style-link is-white">Equity Baskets</a>
+              <a href="investments.html" class="text-style-link is-white">Sovereign Gold Bonds</a>
+              <a href="investments.html" class="text-style-link is-white">Corporate Bonds</a>
+              <a href="404.html" class="text-style-link is-white">US Tech Feeder</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Solutions</div>
+            <div class="footer-link-cell">
+              <a href="advisory.html" class="text-style-link is-white">Discretionary PMS</a>
+              <a href="advisory.html" class="text-style-link is-white">Family Office</a>
+              <a href="advisory.html" class="text-style-link is-white">NRI Wealth Desk</a>
+              <a href="advisory.html" class="text-style-link is-white">Tax Harvesting</a>
+              <a href="pricing.html" class="text-style-link is-white">Plans & Pricing</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Company</div>
+            <div class="footer-link-cell">
+              <a href="about.html" class="text-style-link is-white">About Us</a>
+              <a href="about.html" class="text-style-link is-white">Leadership Team</a>
+              <a href="contact.html" class="text-style-link is-white">Contact & Lounges</a>
+              <a href="404.html" class="text-style-link is-white">Careers</a>
+              <a href="404.html" class="text-style-link is-white">Press & Media</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Security & Legal</div>
+            <div class="footer-link-cell">
+              <a href="404.html" class="text-style-link is-white">SEBI Disclosures</a>
+              <a href="404.html" class="text-style-link is-white">Privacy Policy</a>
+              <a href="404.html" class="text-style-link is-white">Terms of Service</a>
+              <a href="404.html" class="text-style-link is-white">SCORES Grievance</a>
+              <a href="404.html" class="text-style-link is-white">Cybersecurity Audit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-divider"></div>
+
+      <div class="footer-credential-wrapper is-margined-vertical">
+        <div>
+          © 2026 Stackly Wealth Technologies Pvt. Ltd. All rights reserved.
+        </div>
+        <div class="footer-credential-cell">
+          <a href="404.html" class="text-style-link is-white">Style Guide</a>
+          <a href="404.html" class="text-style-link is-white">Licensing</a>
+          <a href="404.html" class="text-style-link is-white">Regulatory Filings</a>
+        </div>
+      </div>
+
+      <div style="font-size: 0.6875rem; color: #666666; line-height: 1.6; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+        *Disclaimer: Mutual fund investments are subject to market risks. Read all scheme related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

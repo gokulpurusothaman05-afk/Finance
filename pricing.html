@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Transparent, zero-commission pricing. Free direct mutual funds, low-cost equity baskets, and flat-fee advisory tiers for Indian investors.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+</head>
+<body>
+
+  <!-- Top Market Ticker Ribbon -->
+  <div class="market-ticker-bar">
+    <div class="ticker-track"></div>
+  </div>
+
+  <!-- Vanguard Navigation Component -->
+  <div class="nav_component">
+    <div class="padding-global">
+      <div class="nav-wrapper">
+        <div class="nav-brand-wrapper">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large">Stackly.</span>
+          </a>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav_menu_link">Home</a>
+          <a href="investments.html" class="nav_menu_link">Investments</a>
+          <a href="advisory.html" class="nav_menu_link">Advisory</a>
+          <a href="pricing.html" class="nav_menu_link active">Pricing</a>
+          <a href="about.html" class="nav_menu_link">About</a>
+          <a href="contact.html" class="nav_menu_link">Contact</a>
+        </nav>
+        <div class="nav-button-wrapper">
+          <a href="login.html" class="button is-dark w-button" style="padding: 8px 16px; font-size: 0.8125rem;">Portal Login</a>
+          <a href="404.html" class="button w-button">Get Started</a>
+          <div class="nav_button mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="investments.html" class="mobile-nav-link">Investments <span>→</span></a>
+      <a href="advisory.html" class="mobile-nav-link">Advisory <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link active">Pricing <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
+      <a href="login.html" class="button is-outline w-button" style="width: 100%;">Portal Login</a>
+      <a href="404.html" class="button w-button" style="width: 100%;">Open Free Account</a>
+    </div>
+  </div>
+
+  <main class="main-wrapper is-relative">
+    <!-- SECTION 1: HERO -->
+    <section class="section-home-hero is-relative">
+      <img class="full-image-absolute" src="assets/hero-pricing.webp" alt="Pricing">
+      <div class="image-overlay"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-hero-wrapper">
+          <div class="home-heading-first">
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">Zero Hidden Commissions.</h1>
+            </div>
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">100% Transparent Pricing.</h1>
+            </div>
+            <div class="text-size-medium" style="margin-top: 1rem; color: rgba(255,255,255,0.85); max-width: 600px;">
+              No secret kickbacks or distribution markups. Simple flat pricing that leaves compounding gains in your account.
+            </div>
+          </div>
+
+          <div class="home-heading-second">
+            <div class="text-size-small">04</div>
+            <div class="text-size-small">Fiduciary Fee Model</div>
+            <div class="text-size-small">Zero Brokerage Delivery</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3-TIER PRICING -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Straightforward Plans</div>
+            <h2 class="heading-style-h3">Choose the Right Tier for Your Portfolio</h2>
+          </div>
+
+          <!-- Tier 1 -->
+          <div class="col-span-4" style="background: #fff; padding: 2.5rem 2rem; border-radius: 4px; border: 1px solid #e4e4e4; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 class="heading-style-h3">Starter Direct</h3>
+              <p style="color: #666; margin-top: 8px;">For individuals beginning their SIP journey in direct mutual funds.</p>
+              <div style="font-size: 2.5rem; font-weight: 700; margin: 20px 0; color: #222;">₹ 0 <span style="font-size: 0.875rem; font-weight: 400; color: #888;">/ forever free</span></div>
+              <ul style="color: #555; line-height: 2; list-style: disc; padding-left: 20px; font-size: 0.875rem;">
+                <li>Zero commission on Direct Mutual Funds</li>
+                <li>₹0 Brokerage on Equity Delivery</li>
+                <li>Free Demat & Trading Account</li>
+                <li>Automated UPI e-NACH Mandates</li>
+              </ul>
+            </div>
+            <a href="404.html" class="button is-dark w-button" style="width: 100%; text-align: center; margin-top: 2rem;">Get Started Free</a>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="col-span-4" style="background: #222; color: #fff; padding: 2.5rem 2rem; border-radius: 4px; border: 1px solid #222; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="text-size-small" style="color: #00d084; font-weight: 700; text-transform: uppercase;">Most Popular</div>
+              <h3 class="heading-style-h3" style="color: #fff; margin-top: 4px;">Pro Wealth</h3>
+              <p style="color: #bbb; margin-top: 8px;">For serious investors seeking high-alpha baskets and automated tax harvesting.</p>
+              <div style="font-size: 2.5rem; font-weight: 700; margin: 20px 0; color: #fff;">₹ 799 <span style="font-size: 0.875rem; font-weight: 400; color: #aaa;">/ month</span></div>
+              <ul style="color: #ddd; line-height: 2; list-style: disc; padding-left: 20px; font-size: 0.875rem;">
+                <li><strong>Everything in Starter +</strong></li>
+                <li>Unlimited Thematic Stock Baskets</li>
+                <li>Automated Tax-Loss Harvesting Engine</li>
+                <li>Algorithmic Monthly Rebalancing</li>
+                <li>Quarterly 1-on-1 CFP Review</li>
+              </ul>
+            </div>
+            <a href="404.html" class="button is-brand w-button" style="width: 100%; text-align: center; margin-top: 2rem;">Activate Pro Wealth</a>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="col-span-4" style="background: #fff; padding: 2.5rem 2rem; border-radius: 4px; border: 1px solid #e4e4e4; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 class="heading-style-h3">Private Family Office</h3>
+              <p style="color: #666; margin-top: 8px;">For founders, CXOs, and NRIs with ₹50 Lakhs+ investable capital.</p>
+              <div style="font-size: 2.5rem; font-weight: 700; margin: 20px 0; color: #222;">0.35% <span style="font-size: 0.875rem; font-weight: 400; color: #888;">p.a. AUM</span></div>
+              <ul style="color: #555; line-height: 2; list-style: disc; padding-left: 20px; font-size: 0.875rem;">
+                <li><strong>Everything in Pro +</strong></li>
+                <li>Dedicated Principal Wealth Manager</li>
+                <li>Discretionary PMS Execution</li>
+                <li>NRI FEMA & DTAA Filing Desk</li>
+                <li>Family Trust & Estate Planning</li>
+              </ul>
+            </div>
+            <a href="advisory.html#book-consult" class="button is-dark w-button" style="width: 100%; text-align: center; margin-top: 2rem;">Speak to CIO Desk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURE MATRIX TABLE -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Deep Comparison</div>
+            <h2 class="heading-style-h3">Complete Feature Comparison</h2>
+          </div>
+
+          <div class="col-span-12">
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Capability</th>
+                    <th>Starter Direct</th>
+                    <th>Pro Wealth</th>
+                    <th>Family Office</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Direct Mutual Funds (0% Cut)</strong></td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Included</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Included</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Included</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Equity Delivery Brokerage</strong></td>
+                    <td>₹ 0</td>
+                    <td>₹ 0</td>
+                    <td>₹ 0</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Thematic Equity Baskets</strong></td>
+                    <td>-</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Unlimited</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Bespoke</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Automated Tax Harvesting</strong></td>
+                    <td>-</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Included</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Advanced + CA</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Dedicated Wealth Manager</strong></td>
+                    <td>-</td>
+                    <td>Quarterly CFP</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Dedicated CIO Desk</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Discretionary PMS Access</strong></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td style="color: #00875a;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Included (₹50L+)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: REGULATORY STATUTORY CHARGES -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Statutory Transparency</div>
+            <h2 class="heading-style-h3">Indian Government & Exchange Levies</h2>
+          </div>
+
+          <div class="col-span-3" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">STT Tax</h3>
+            <p style="color: #666; margin-top: 8px;">0.1% on equity delivery buy and sell as mandated by the Ministry of Finance.</p>
+          </div>
+
+          <div class="col-span-3" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">Exchange Turnover</h3>
+            <p style="color: #666; margin-top: 8px;">NSE: 0.00297% | BSE: 0.00375% of trade value for trade clearing.</p>
+          </div>
+
+          <div class="col-span-3" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">GST (18%)</h3>
+            <p style="color: #666; margin-top: 8px;">Applicable only on brokerage and advisory subscription fees.</p>
+          </div>
+
+          <div class="col-span-3" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">SEBI Turnover</h3>
+            <p style="color: #666; margin-top: 8px;">₹10 per Crore of turnover as prescribed by SEBI regulations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DIRECT VS REGULAR COMPOUNDING -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12">
+            <div class="calc-wrapper" style="background: #222; color: #fff; border-color: #222;">
+              <div class="calc-grid">
+                <div>
+                  <div class="text-size-small" style="color: #00d084; text-transform: uppercase;">The 1.5% Compounding Secret</div>
+                  <h2 class="heading-style-h2" style="color: #fff; margin-top: 8px;">How Regular Mutual Funds Eat Your Wealth</h2>
+                  <p style="color: #ccc; margin-top: 12px; line-height: 1.6;">
+                    A 1.5% annual distributor commission on a ₹25,000 monthly SIP over 20 years costs you over <strong>₹28.4 Lakhs</strong> in lost corpus. Stackly eliminates this entirely.
+                  </p>
+                  <a href="404.html" class="button is-brand w-button" style="margin-top: 20px;">Switch to Direct Mutual Funds</a>
+                </div>
+
+                <div class="calc-result-box" style="color: #222;">
+                  <div class="text-size-small" style="text-transform: uppercase; color: #888;">Extra Compounded Wealth</div>
+                  <div class="heading-style-h2" style="color: #00875a; margin-top: 4px;">+ ₹ 28.40 Lakhs</div>
+                  <div style="font-size: 0.875rem; color: #666; border-top: 1px solid #eee; padding-top: 12px;">
+                    Stackly Direct: <strong>₹ 1.69 Cr</strong> vs Traditional Regular: <strong>₹ 1.41 Cr</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: NRI & CORPORATE TREASURY -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Institutional Advisory</div>
+            <h2 class="heading-style-h3">Corporate Treasury & NRI Packages</h2>
+          </div>
+
+          <div class="col-span-6" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">Corporate Treasury Overnight Parking</h3>
+            <p style="color: #666; margin-top: 8px;">Earn 7.1% annualized yields on idle working capital with T+1 instant liquidity.</p>
+            <a href="contact.html" style="color: #222; font-weight: 600; display: inline-block; margin-top: 12px;">Contact Treasury Desk →</a>
+          </div>
+
+          <div class="col-span-6" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
+            <h3 class="heading-style-h4">End-to-End NRI PIS & FEMA Advisory</h3>
+            <p style="color: #666; margin-top: 8px;">Complete 15CA/15CB CA certification for smooth overseas capital repatriation.</p>
+            <a href="contact.html" style="color: #222; font-weight: 600; display: inline-block; margin-top: 12px;">Contact NRI Desk →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PRICING FAQS -->
+    <section class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Billing Details</div>
+            <h2 class="heading-style-h3">Frequently Asked Pricing Questions</h2>
+          </div>
+
+          <div class="accordian">
+            <div class="accordian-cell is-open">
+              <div class="accordian-bar">
+                <div class="accordian-heading">Are there any hidden Demat AMC fees?</div>
+                <div class="icon-wrapper">+</div>
+              </div>
+              <div class="accordion-content">
+                <p>No. Basic Demat AMC is 100% waived for life on Starter and Pro plans. Zero surprise fees.</p>
+              </div>
+            </div>
+
+            <div class="accordian-cell">
+              <div class="accordian-bar">
+                <div class="accordian-heading">Can I cancel my Pro subscription anytime?</div>
+                <div class="icon-wrapper">+</div>
+              </div>
+              <div class="accordion-content">
+                <p>Yes. You can cancel with 1 click. Your investments remain active on the free Starter Direct tier.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CTA BANNER -->
+    <section class="section-home-cta is-relative">
+      <img src="assets/cta-pricing.webp" alt="Risk-Free Guarantee" class="full-image-absolute">
+      <div class="image-overlay" style="opacity: 0.7;"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-cta-wrapper">
+          <div class="max-width-large text-align-center">
+            <div class="cta-wrapper">
+              <h2 class="heading-style-h2">Start Pro Wealth Risk-Free Today</h2>
+              <div class="text-size-regular">30-day full money-back guarantee. Zero risk. Full transparency.</div>
+              <a href="404.html" class="button w-button">Activate Pro Wealth Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Vanguard Footer -->
+  <footer id="Footer" class="section-home-footer background-color-primary">
+    <div class="padding-global">
+      <div class="section-grid-x12 margin-bottom">
+        <div class="footer-heading">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 1rem;">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large" style="font-size: 1.75rem;">Stackly.</span>
+          </a>
+          <p class="text-size-small" style="color: #aaaaaa; line-height: 1.6;">
+            Institutional wealth management, direct mutual funds, and quantitative PMS engineered for India's high-net-worth investors.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.75rem; color: #777; line-height: 1.5;">
+            SEBI Registered RIA: INA200018420<br>
+            AMFI Registered Mutual Fund: ARN-194820<br>
+            CIN: U67190MH2024PTC394820
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Investments</div>
+            <div class="footer-link-cell">
+              <a href="investments.html" class="text-style-link is-white">Direct Mutual Funds</a>
+              <a href="investments.html" class="text-style-link is-white">Equity Baskets</a>
+              <a href="investments.html" class="text-style-link is-white">Sovereign Gold Bonds</a>
+              <a href="investments.html" class="text-style-link is-white">Corporate Bonds</a>
+              <a href="404.html" class="text-style-link is-white">US Tech Feeder</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Solutions</div>
+            <div class="footer-link-cell">
+              <a href="advisory.html" class="text-style-link is-white">Discretionary PMS</a>
+              <a href="advisory.html" class="text-style-link is-white">Family Office</a>
+              <a href="advisory.html" class="text-style-link is-white">NRI Wealth Desk</a>
+              <a href="advisory.html" class="text-style-link is-white">Tax Harvesting</a>
+              <a href="pricing.html" class="text-style-link is-white">Plans & Pricing</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Company</div>
+            <div class="footer-link-cell">
+              <a href="about.html" class="text-style-link is-white">About Us</a>
+              <a href="about.html" class="text-style-link is-white">Leadership Team</a>
+              <a href="contact.html" class="text-style-link is-white">Contact & Lounges</a>
+              <a href="404.html" class="text-style-link is-white">Careers</a>
+              <a href="404.html" class="text-style-link is-white">Press & Media</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Security & Legal</div>
+            <div class="footer-link-cell">
+              <a href="404.html" class="text-style-link is-white">SEBI Disclosures</a>
+              <a href="404.html" class="text-style-link is-white">Privacy Policy</a>
+              <a href="404.html" class="text-style-link is-white">Terms of Service</a>
+              <a href="404.html" class="text-style-link is-white">SCORES Grievance</a>
+              <a href="404.html" class="text-style-link is-white">Cybersecurity Audit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-divider"></div>
+
+      <div class="footer-credential-wrapper is-margined-vertical">
+        <div>
+          © 2026 Stackly Wealth Technologies Pvt. Ltd. All rights reserved.
+        </div>
+        <div class="footer-credential-cell">
+          <a href="404.html" class="text-style-link is-white">Style Guide</a>
+          <a href="404.html" class="text-style-link is-white">Licensing</a>
+          <a href="404.html" class="text-style-link is-white">Regulatory Filings</a>
+        </div>
+      </div>
+
+      <div style="font-size: 0.6875rem; color: #666666; line-height: 1.6; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+        *Disclaimer: Mutual fund investments are subject to market risks. Read all scheme related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

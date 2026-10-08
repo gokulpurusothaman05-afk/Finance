@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <meta name="description" content="Premier wealth management platform crafted for modern Indian investors. Direct mutual funds, algorithmic equity baskets, and SEBI registered advisory.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/webp" href="assets/logo.webp">
+</head>
+<body>
+
+  <!-- Live Market Ticker Ribbon (Indian Financial Context) -->
+  <div class="market-ticker-bar">
+    <div class="ticker-track"></div>
+  </div>
+
+  <!-- Vanguard Navigation Component -->
+  <div class="nav_component">
+    <div class="padding-global">
+      <div class="nav-wrapper">
+        <div class="nav-brand-wrapper">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large">Stackly.</span>
+          </a>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav_menu_link active">Home</a>
+          <a href="investments.html" class="nav_menu_link">Investments</a>
+          <a href="advisory.html" class="nav_menu_link">Advisory</a>
+          <a href="pricing.html" class="nav_menu_link">Pricing</a>
+          <a href="about.html" class="nav_menu_link">About</a>
+          <a href="contact.html" class="nav_menu_link">Contact</a>
+        </nav>
+        <div class="nav-button-wrapper">
+          <a href="login.html" class="button is-dark w-button" style="padding: 8px 16px; font-size: 0.8125rem;">Portal Login</a>
+          <a href="404.html" class="button w-button">Get Free Consult</a>
+          <div class="nav_button mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="investments.html" class="mobile-nav-link">Investments <span>→</span></a>
+      <a href="advisory.html" class="mobile-nav-link">Advisory <span>→</span></a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
+      <a href="login.html" class="button is-outline w-button" style="width: 100%;">Portal Login (Client / Admin)</a>
+      <a href="404.html" class="button w-button" style="width: 100%;">Open Free Account</a>
+    </div>
+  </div>
+
+  <main class="main-wrapper is-relative">
+    <!-- ==========================================================================
+         SECTION 1: HERO (Vanguard Exact Architecture)
+         ========================================================================== -->
+    <section class="section-home-hero is-relative">
+      <img class="full-image-absolute" src="assets/hero-home.webp" alt="Stackly Indian Wealth">
+      <div class="image-overlay"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-hero-wrapper">
+          <div class="home-heading-first">
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">Unlock Financial Success</h1>
+            </div>
+            <div class="heading-wrapper">
+              <h1 class="heading-style-h1">with SEBI-Registered Advisory.</h1>
+            </div>
+            <div class="text-size-medium" style="margin-top: 1rem; color: rgba(255,255,255,0.85); max-width: 600px;">
+              Get institutional-grade wealth advice tailored to your financial goals in India. Direct mutual funds, algorithmic baskets, and zero commissions.
+            </div>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="404.html" class="button is-brand w-button">Start Investing Now</a>
+              <a href="advisory.html" class="button is-outline w-button">Book 1-on-1 Strategy</a>
+            </div>
+          </div>
+
+          <div class="home-heading-second">
+            <div class="text-size-small">01</div>
+            <div class="text-size-small">A Group Of Fiduciary Financial Architects</div>
+            <div class="text-size-small">Managing ₹4,850+ Cr AUM</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: TRUST & REGULATORY INTEGRATION (Vanguard Clean Grid)
+         ========================================================================== -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small" style="text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Regulated Infrastructure</div>
+            <h2 class="heading-style-h3">Integrated with India's Premier Market Institutions</h2>
+          </div>
+          <div class="col-span-12 institution-strip">
+            <div style="font-weight: 600;"><strong>SEBI</strong> Registered RIA (INA200018420)</div>
+            <div style="font-weight: 600;"><strong>AMFI</strong> Registered ARN-284910</div>
+            <div style="font-weight: 600;"><strong>NSE & BSE</strong> Direct Order Routing</div>
+            <div style="font-weight: 600;"><strong>CDSL & NSDL</strong> Depository Settlement</div>
+            <div style="font-weight: 600;"><strong>CAMS & KFintech</strong> Automated RTA</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: WHY CHOOSE US (Vanguard Rising Statistic Bars)
+         ========================================================================== -->
+    <section id="Benefit" class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Why Choose Us?</div>
+            <h2 class="heading-style-h3">The modern Indian financial world can be complex, but at Stackly, we simplify the compounding journey.</h2>
+            <div class="text-size-small" style="margin-top: 8px; color: var(--text-color--text-secondary);">Trusted By Many, Proven By Audited Results.</div>
+          </div>
+
+          <div class="benefit-statistics-wrapper">
+            <div class="statistic-cell">
+              <div class="statistic-content">
+                <div class="text-size-large" style="font-weight: 600;">75%</div>
+                <div class="text-size-small">Average Increase in Client Wealth ROI</div>
+              </div>
+            </div>
+            <div class="statistic-cell">
+              <div class="statistic-content _2nd">
+                <div class="text-size-large" style="font-weight: 600;">88%</div>
+                <div class="text-size-small">Successful Tax-Loss Harvesting Plans</div>
+              </div>
+            </div>
+            <div class="statistic-cell">
+              <div class="statistic-content _3rd">
+                <div class="text-size-large" style="font-weight: 600;">99.4%</div>
+                <div class="text-size-small">Multi-Year Client Retention Rate</div>
+              </div>
+            </div>
+            <div class="statistic-cell">
+              <div class="statistic-content _4th">
+                <div class="text-size-large" style="font-weight: 600;">96%</div>
+                <div class="text-size-small">Client Goal Fulfillment Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: WHO WE ARE (Vanguard Value Cells with Hover Expansion)
+         ========================================================================== -->
+    <section id="About" class="section-home-about background-color-alternate">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Who We Are</div>
+            <h2 class="heading-style-h3">With seasoned market professionals and quantitative research, our team provides personalized advice tailored to each client's goals. We uphold 4 core values.</h2>
+          </div>
+
+          <div class="about-wrapper">
+            <div class="value-cell">
+              <div class="value-cell-title">Transparency</div>
+              <div class="value-description-absolute">
+                <div>We believe in being 100% open with our clients. Zero distributor kickbacks, zero hidden commissions, and total visibility over every rupee.</div>
+              </div>
+            </div>
+
+            <div class="value-cell">
+              <div class="value-cell-title">Excellence</div>
+              <div class="value-description-absolute">
+                <div>Excellence is our standard. We strive for superior risk-adjusted alpha across all portfolios, backed by rigorous forensic balance sheet checks.</div>
+              </div>
+            </div>
+
+            <div class="value-cell">
+              <div class="value-cell-title">Integrity</div>
+              <div class="value-description-absolute">
+                <div>As a SEBI Registered Investment Advisor, we are legally bound to put your interests first. Unbiased, ethical, and conflict-free wealth advice.</div>
+              </div>
+            </div>
+
+            <div class="value-cell">
+              <div class="value-cell-title">Innovation</div>
+              <div class="value-description-absolute">
+                <div>We embrace algorithmic rebalancing, automated capital gains harvesting, and bank-grade data security to maximize compounding.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: INTERACTIVE SIP WEALTH CALCULATOR (Indian Financial Tool)
+         ========================================================================== -->
+    <section class="section-home-benefit background-color-tertiary">
+      <div class="padding-global padding-section-small">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Wealth Modeler</div>
+            <h2 class="heading-style-h3">Calculate Your Long-Term SIP Compounding</h2>
+          </div>
+
+          <div class="col-span-12">
+            <div class="calc-wrapper">
+              <div class="calc-grid">
+                <div>
+                  <div style="margin-bottom: 24px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                      <span class="text-size-regular text-weight-semibold">Monthly Investment (₹)</span>
+                      <span class="text-size-regular" id="sip-monthly-val" style="font-weight: 700; color: #222;">₹ 25,000</span>
+                    </div>
+                    <input type="range" id="sip-monthly-slider" class="calc-slider" min="1000" max="250000" step="1000" value="25000">
+                  </div>
+
+                  <div style="margin-bottom: 24px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                      <span class="text-size-regular text-weight-semibold">Expected Annual Return Rate</span>
+                      <span class="text-size-regular" id="sip-return-val" style="font-weight: 700; color: #222;">15% p.a.</span>
+                    </div>
+                    <input type="range" id="sip-return-slider" class="calc-slider" min="8" max="28" step="0.5" value="15">
+                  </div>
+
+                  <div style="margin-bottom: 24px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                      <span class="text-size-regular text-weight-semibold">Time Horizon</span>
+                      <span class="text-size-regular" id="sip-years-val" style="font-weight: 700; color: #222;">15 Yrs</span>
+                    </div>
+                    <input type="range" id="sip-years-slider" class="calc-slider" min="1" max="30" step="1" value="15">
+                  </div>
+                </div>
+
+                <div class="calc-result-box">
+                  <div>
+                    <div class="text-size-small" style="text-transform: uppercase; color: #888;">Projected Maturity Corpus</div>
+                    <div class="heading-style-h2" id="sip-total-wealth" style="color: #222; font-weight: 600; margin-top: 4px;">₹ 1.69 Cr</div>
+                  </div>
+
+                  <div style="display: flex; justify-content: space-between; border-top: 1px solid #eee; padding-top: 12px;">
+                    <span class="text-size-small">Total Amount Invested:</span>
+                    <strong class="text-size-small" id="sip-total-invested">₹ 45.00 L</strong>
+                  </div>
+
+                  <div style="display: flex; justify-content: space-between;">
+                    <span class="text-size-small">Estimated Wealth Gain:</span>
+                    <strong class="text-size-small" id="sip-est-returns" style="color: #00875a;">₹ 1.24 Cr</strong>
+                  </div>
+
+                  <a href="404.html" class="button is-dark w-button" style="width: 100%; text-align: center;">Execute This SIP Plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: REAL STORIES OF SUCCESS (Vanguard Testimonials Carousel)
+         ========================================================================== -->
+    <section id="Testimonial" class="section-home-testimonial">
+      <div class="padding-global padding-section-small background-color-secondary">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Real Stories of Success</div>
+            <h2 class="heading-style-h3">What Our Clients Say</h2>
+          </div>
+
+          <div class="testimonial-wrapper">
+            <div class="testimonial-slider">
+              <div class="testimonial-track">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-cell">
+                  <div class="text-size-regular" style="line-height: 1.6;">
+                    "Stackly has been instrumental in helping me secure my family's financial future. Their direct mutual fund transition saved us ₹3.8 Lakhs yearly in distributor cuts while growing our corpus at 21% CAGR."
+                  </div>
+                  <div class="testimonial-credential-wrapper">
+                    <div class="text-size-small text-weight-semibold">Arjun Singhal</div>
+                    <div class="text-size-small" style="color: #666;">Tech Founder, Bengaluru</div>
+                    <img src="assets/testimonial-1.webp" class="testimonial-image" alt="Arjun Singhal">
+                  </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-cell">
+                  <div class="text-size-regular" style="line-height: 1.6;">
+                    "As a medical specialist with zero time for active trading, Stackly's dedicated Certified Financial Planner and tax-loss harvesting gave me complete peace of mind and stellar returns."
+                  </div>
+                  <div class="testimonial-credential-wrapper">
+                    <div class="text-size-small text-weight-semibold">Dr. Priya Nambiar</div>
+                    <div class="text-size-small" style="color: #666;">Chief of Cardiology, Mumbai</div>
+                    <img src="assets/testimonial-2.webp" class="testimonial-image" alt="Dr. Priya Nambiar">
+                  </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-cell">
+                  <div class="text-size-regular" style="line-height: 1.6;">
+                    "Managing Indian assets from Dubai was a compliance headache until Stackly took over. Their NRI desk handled NRE/NRO repatriation, FEMA reporting, and DTAA tax optimization flawlessly."
+                  </div>
+                  <div class="testimonial-credential-wrapper">
+                    <div class="text-size-small text-weight-semibold">Vikramaditya Verma</div>
+                    <div class="text-size-small" style="color: #666;">Managing Director, Dubai / Hyderabad</div>
+                    <img src="assets/testimonial-3.webp" class="testimonial-image" alt="Vikramaditya Verma">
+                  </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-cell">
+                  <div class="text-size-regular" style="line-height: 1.6;">
+                    "The institutional quantitative factor models generated remarkable alpha during market drawdowns. Their rebalancing strategy protects capital without missing upside rallies."
+                  </div>
+                  <div class="testimonial-credential-wrapper">
+                    <div class="text-size-small text-weight-semibold">Meera Iyer</div>
+                    <div class="text-size-small" style="color: #666;">Partner, Private Equity, Mumbai</div>
+                    <img src="assets/testimonial-4.webp" class="testimonial-image" alt="Meera Iyer">
+                  </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-cell">
+                  <div class="text-size-regular" style="line-height: 1.6;">
+                    "The zero-commission transparency is revolutionary in India. Stackly's direct advisory dashboard gave our family office total clarity on all capital gains and allocation weights."
+                  </div>
+                  <div class="testimonial-credential-wrapper">
+                    <div class="text-size-small text-weight-semibold">Rajeshwari Somani</div>
+                    <div class="text-size-small" style="color: #666;">Family Office Trustee, New Delhi</div>
+                    <img src="assets/testimonial-5.webp" class="testimonial-image" alt="Rajeshwari Somani">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-controls">
+              <div class="slider-arrow-btn carousel-prev">←</div>
+              <div class="slider-arrow-btn carousel-next">→</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: FREQUENTLY ASKED QUESTIONS (Vanguard Exact Accordion)
+         ========================================================================== -->
+    <section id="FAQ" class="section-home-faq">
+      <div class="padding-global padding-section-small background-color-alternate">
+        <div class="section-grid-x12">
+          <div class="col-span-12 margin-bottom">
+            <div class="text-size-small">Your Questions, Answered</div>
+            <h2 class="heading-style-h3">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="accordian">
+            <!-- FAQ 1 -->
+            <div class="accordian-cell is-open">
+              <div class="accordian-bar">
+                <div class="accordian-heading">1. What services does Stackly offer?</div>
+                <div class="icon-wrapper">+</div>
+              </div>
+              <div class="accordion-content">
+                <p>We provide 100% direct mutual funds with zero commissions, research-backed thematic Indian equity baskets, Sovereign Gold Bonds (SGBs), government fixed income, and bespoke Portfolio Management Services (PMS) for HNIs with complete tax-loss harvesting.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordian-cell">
+              <div class="accordian-bar">
+                <div class="accordian-heading">2. How are client securities and funds held?</div>
+                <div class="icon-wrapper">+</div>
+              </div>
+              <div class="accordion-content">
+                <p>Your assets are held directly in your personal Demat account with CDSL / NSDL under your own PAN. All transactions are cleared through RBI-approved clearing corporations (ICCL / NSE Clearing). Stackly never holds your funds on our balance sheet.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordian-cell">
+              <div class="accordian-bar">
+                <div class="accordian-heading">3. What is your fee structure?</div>
+                <div class="icon-wrapper">+</div>
+              </div>
+              <div class="accordion-content">
+                <p>Starter Direct is 100% free with zero brokerage on delivery and zero commission on direct mutual funds. Pro Wealth is ₹799/month for algorithmic rebalancing and research baskets. Family Office PMS is 0.35% p.a. on AUM with zero hidden kickbacks.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordian-cell">
+              <div class="accordian-bar">
+                <div class="accordian-heading">4. How do you ensure data security?</div>
+                <div class="icon-wrapper">+</div>
+              </div>
+              <div class="accordion-content">
+                <p>We utilize 256-bit military-grade encryption, ISO 27001 certified data centers, and SEBI-mandated two-factor authentication (2FA) for every financial operation.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordian-cell">
+              <div class="accordian-bar">
+                <div class="accordian-heading">5. How does Stackly differ from traditional mutual fund distributors?</div>
+                <div class="icon-wrapper">+</div>
+              </div>
+              <div class="accordion-content">
+                <p>Distributors sell regular mutual funds and pocket hidden 1% to 1.5% commissions every year from your money. Stackly is a SEBI Registered Investment Advisor (RIA) offering pure direct plans and acting as a strict fiduciary.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: CTA (Vanguard Full-Bleed Image Banner)
+         ========================================================================== -->
+    <section id="CTA" class="section-home-cta is-relative">
+      <img src="assets/cta-home.webp" alt="Join Stackly" class="full-image-absolute">
+      <div class="image-overlay" style="opacity: 0.7;"></div>
+
+      <div class="padding-global padding-section-small is-full-height">
+        <div class="home-cta-wrapper">
+          <div class="max-width-large text-align-center">
+            <div class="cta-wrapper">
+              <h2 class="heading-style-h2">Ready to Take Control of Your Financial Future?</h2>
+              <div class="text-size-regular">Get expert advice tailored to your financial goals in India.</div>
+              <a href="404.html" class="button w-button">Get Your Free Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       VANGUARD FOOTER (Uniform Across All Pages)
+       ========================================================================== -->
+  <footer id="Footer" class="section-home-footer background-color-primary">
+    <div class="padding-global">
+      <div class="section-grid-x12 margin-bottom">
+        <div class="footer-heading">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 1rem;">
+            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
+            <span class="text-size-large" style="font-size: 1.75rem;">Stackly.</span>
+          </a>
+          <p class="text-size-small" style="color: #aaaaaa; line-height: 1.6;">
+            Institutional wealth management, direct mutual funds, and quantitative PMS engineered for India's high-net-worth investors.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.75rem; color: #777; line-height: 1.5;">
+            SEBI Registered RIA: INA200018420<br>
+            AMFI Registered Mutual Fund: ARN-194820<br>
+            CIN: U67190MH2024PTC394820
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Investments</div>
+            <div class="footer-link-cell">
+              <a href="investments.html" class="text-style-link is-white">Direct Mutual Funds</a>
+              <a href="investments.html" class="text-style-link is-white">Equity Baskets</a>
+              <a href="investments.html" class="text-style-link is-white">Sovereign Gold Bonds</a>
+              <a href="investments.html" class="text-style-link is-white">Corporate Bonds</a>
+              <a href="404.html" class="text-style-link is-white">US Tech Feeder</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Solutions</div>
+            <div class="footer-link-cell">
+              <a href="advisory.html" class="text-style-link is-white">Discretionary PMS</a>
+              <a href="advisory.html" class="text-style-link is-white">Family Office</a>
+              <a href="advisory.html" class="text-style-link is-white">NRI Wealth Desk</a>
+              <a href="advisory.html" class="text-style-link is-white">Tax Harvesting</a>
+              <a href="pricing.html" class="text-style-link is-white">Plans & Pricing</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Company</div>
+            <div class="footer-link-cell">
+              <a href="about.html" class="text-style-link is-white">About Us</a>
+              <a href="about.html" class="text-style-link is-white">Leadership Team</a>
+              <a href="contact.html" class="text-style-link is-white">Contact & Lounges</a>
+              <a href="404.html" class="text-style-link is-white">Careers</a>
+              <a href="404.html" class="text-style-link is-white">Press & Media</a>
+            </div>
+          </div>
+
+          <div class="footer-link-wrapper">
+            <div class="text-size-small text-weight-semibold">Security & Legal</div>
+            <div class="footer-link-cell">
+              <a href="404.html" class="text-style-link is-white">SEBI Disclosures</a>
+              <a href="404.html" class="text-style-link is-white">Privacy Policy</a>
+              <a href="404.html" class="text-style-link is-white">Terms of Service</a>
+              <a href="404.html" class="text-style-link is-white">SCORES Grievance</a>
+              <a href="404.html" class="text-style-link is-white">Cybersecurity Audit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-divider"></div>
+
+      <div class="footer-credential-wrapper is-margined-vertical">
+        <div>
+          © 2026 Stackly Wealth Technologies Pvt. Ltd. All rights reserved.
+        </div>
+        <div class="footer-credential-cell">
+          <a href="404.html" class="text-style-link is-white">Style Guide</a>
+          <a href="404.html" class="text-style-link is-white">Licensing</a>
+          <a href="404.html" class="text-style-link is-white">Regulatory Filings</a>
+        </div>
+      </div>
+
+      <div style="font-size: 0.6875rem; color: #666666; line-height: 1.6; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+        *Disclaimer: Mutual fund investments are subject to market risks. Read all scheme related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
