@@ -3,388 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stackly</title>
+  <title>404 - Page Not Found | Stackly Wealth</title>
   <meta name="description" content="The requested financial page could not be found. Return to Stackly to explore zero-commission mutual funds, PMS, and advisory services.">
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/webp" href="assets/logo.webp">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: var(--font-family-main);
+      overflow-x: hidden;
+    }
+    .standalone-error-container {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 2.5rem 1.5rem 2rem;
+      background: #1a1a1a;
+      overflow: hidden;
+    }
+    .error-bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.12;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .error-glow-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 40%, rgba(0, 208, 132, 0.08) 0%, rgba(26, 26, 26, 0.95) 75%);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .error-content-box {
+      position: relative;
+      z-index: 3;
+      max-width: 820px;
+      width: 100%;
+      margin: auto 0;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .standalone-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      transition: opacity var(--transition-smooth);
+    }
+    .standalone-brand:hover {
+      opacity: 0.85;
+    }
+    .standalone-brand img {
+      height: 36px;
+      width: auto;
+    }
+    .standalone-brand span {
+      color: #ffffff;
+      font-size: 1.625rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .error-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 208, 132, 0.08);
+      border: 1px solid rgba(0, 208, 132, 0.25);
+      color: #00d084;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .error-badge-dot {
+      width: 7px;
+      height: 7px;
+      background: #00d084;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #00d084;
+    }
+    .error-number {
+      font-family: var(--font-family-mono);
+      font-size: clamp(5.5rem, 14vw, 8.5rem);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      color: #00d084;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 45px rgba(0, 208, 132, 0.25);
+    }
+    .error-title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.875rem;
+    }
+    .error-description {
+      color: #aaaaaa;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 580px;
+      margin: 0 auto 2.25rem;
+    }
+    .error-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .quick-links-bar {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .quick-link-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #cccccc;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.8125rem;
+      text-decoration: none;
+      transition: all var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .quick-link-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(0, 208, 132, 0.4);
+      color: #00d084;
+      transform: translateY(-2px);
+    }
+    .standalone-footer-note {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #666666;
+      line-height: 1.5;
+      padding-top: 1rem;
+    }
+    .standalone-footer-note a {
+      color: #888888;
+      text-decoration: underline;
+    }
+    .standalone-footer-note a:hover {
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Top Market Ticker Bar -->
-  <div class="market-ticker-bar">
-    <div class="ticker-track"></div>
-  </div>
+  <div class="standalone-error-container">
+    <img src="assets/cta-404.webp" alt="Background" class="error-bg-image">
+    <div class="error-glow-overlay"></div>
 
-  <!-- Vanguard Navbar -->
-  <header class="site-header">
-    <div class="nav_component">
-      <div class="padding-global">
-        <div class="nav-wrapper">
-          <div class="nav-brand-wrapper">
-            <a href="index.html" class="nav-brand">
-              <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
-              <span class="text-size-large">Stackly.</span>
-            </a>
-          </div>
+    <!-- Header Logo -->
+    <div style="position: relative; z-index: 3; width: 100%; text-align: center;">
+      <a href="index.html" class="standalone-brand">
+        <img src="assets/logo.webp" alt="Stackly">
+        <span>Stackly.</span>
+      </a>
+    </div>
 
-          <nav class="nav-menu">
-            <a href="index.html" class="nav_menu_link">Home</a>
-            <a href="investments.html" class="nav_menu_link">Investments</a>
-            <a href="advisory.html" class="nav_menu_link">Advisory</a>
-            <a href="pricing.html" class="nav_menu_link">Pricing</a>
-            <a href="about.html" class="nav_menu_link">About</a>
-            <a href="contact.html" class="nav_menu_link">Contact</a>
-          </nav>
+    <!-- Main Content -->
+    <main class="error-content-box">
+      <!-- Status Tag -->
+     
 
-          <div class="nav-button-wrapper">
-            <a href="login.html" class="button is-dark w-button" style="padding: 8px 16px; font-size: 0.8125rem;">Portal Login</a>
-            <a href="404.html" class="button w-button">Get Free Consult</a>
-            <div class="nav_button mobile-toggle" aria-label="Toggle navigation menu">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
-            </div>
-          </div>
-        </div>
+      <!-- Giant 404 Number -->
+      <div class="error-number">404</div>
+
+      <!-- Title -->
+      <h1 class="error-title">Page or Resource Not Found</h1>
+
+      <!-- Description -->
+      <p class="error-description">
+        The financial portal link, report, or requested destination has been moved, updated, or archived under SEBI compliance protocols.
+      </p>
+
+      <!-- Primary Actions -->
+      <div class="error-actions">
+        <a href="index.html" class="button is-brand w-button" style="display: inline-flex; align-items: center; gap: 8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span>Return to Homepage</span>
+        </a>
+        <a href="investments.html" class="button is-outline w-button" style="color: #ffffff; border-color: rgba(255,255,255,0.35);">
+          Explore Investments
+        </a>
+        <a href="contact.html" class="button is-dark w-button" style="background: #2a2a2a; border: 1px solid rgba(255,255,255,0.12);">
+          Contact Support Desk
+        </a>
       </div>
-    </div>
-  </header>
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-nav-drawer">
-    <div class="mobile-nav-links">
-      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
-      <a href="investments.html" class="mobile-nav-link">Investments <span>→</span></a>
-      <a href="advisory.html" class="mobile-nav-link">Advisory <span>→</span></a>
-      <a href="pricing.html" class="mobile-nav-link">Pricing <span>→</span></a>
-      <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
-      <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
-      <a href="login.html" class="button is-outline w-button" style="width: 100%;">Portal Login</a>
-      <a href="404.html" class="button w-button" style="width: 100%;">Open Free Account</a>
+    
+    </main>
+
+    <!-- Minimal Footnote -->
+    <div class="standalone-footer-note">
+      © 2026 Stackly Wealth Technologies Pvt. Ltd. | SEBI Registered RIA: INA200018420
     </div>
   </div>
 
-  <main class="main-wrapper is-relative">
-    <!-- SECTION 1: 404 HERO -->
-    <section class="section-home-hero" style="min-height: 65vh; justify-content: center; align-items: center; text-align: center;">
-      <div class="image-overlay" style="opacity: 0.85;"></div>
-      <div class="padding-global is-relative" style="z-index: 2; max-width: 720px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem;">
-        <div style="display: inline-block; font-family: var(--font-family-mono); font-size: clamp(4rem, 10vw, 7rem); font-weight: 700; line-height: 1; color: #00d084; margin-bottom: 1rem;">
-          404
-        </div>
-        <h1 class="heading-style-h2" style="color: #ffffff; margin-bottom: 1rem;">
-          Page or Resource Not Found
-        </h1>
-        <p class="text-size-medium" style="color: #cccccc; margin-bottom: 2rem; line-height: 1.6;">
-          The financial portal link, report, or requested destination has been moved, updated, or archived under SEBI compliance protocols.
-        </p>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-          <a href="index.html" class="button is-brand w-button">Return to Homepage</a>
-          <a href="investments.html" class="button is-outline w-button" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">Explore Investments</a>
-          <a href="contact.html" class="button is-dark w-button" style="background: #333333;">Contact Support Desk</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: POPULAR DIRECTORIES -->
-    <section class="section-home-about background-color-alternate">
-      <div class="padding-global padding-section-small">
-        <div class="section-grid-x12">
-          <div class="col-span-12 margin-bottom">
-            <div class="text-size-small">Quick Navigation</div>
-            <h2 class="heading-style-h3">Looking for One of Our Primary Solutions?</h2>
-          </div>
-
-          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px; background: #fff;">
-            <div class="text-size-small" style="color: #00875a; font-weight: 700;">DIRECT INVESTING</div>
-            <h3 class="heading-style-h4" style="margin-top: 8px;">Direct Mutual Funds</h3>
-            <p style="color: #666; margin-top: 8px;">Zero commissions, automated SIPs, and direct fund transfer via BSE StAR MF.</p>
-            <a href="investments.html" class="text-style-link" style="display: inline-block; margin-top: 16px; font-weight: 600; color: #222;">Explore Direct Funds →</a>
-          </div>
-
-          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px; background: #fff;">
-            <div class="text-size-small" style="color: #00875a; font-weight: 700;">HNI WEALTH</div>
-            <h3 class="heading-style-h4" style="margin-top: 8px;">Discretionary PMS</h3>
-            <p style="color: #666; margin-top: 8px;">High-conviction, concentrated Indian equity baskets for ₹50 Lakhs+ mandates.</p>
-            <a href="advisory.html" class="text-style-link" style="display: inline-block; margin-top: 16px; font-weight: 600; color: #222;">PMS Factsheets →</a>
-          </div>
-
-          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px; background: #fff;">
-            <div class="text-size-small" style="color: #00875a; font-weight: 700;">TRANSPARENT PRICING</div>
-            <h3 class="heading-style-h4" style="margin-top: 8px;">Fee Comparison</h3>
-            <p style="color: #666; margin-top: 8px;">See how zero hidden kickbacks save you up to 1.5% annually in compounding.</p>
-            <a href="pricing.html" class="text-style-link" style="display: inline-block; margin-top: 16px; font-weight: 600; color: #222;">View Plans →</a>
-          </div>
-
-          <div class="col-span-3" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px; background: #fff;">
-            <div class="text-size-small" style="color: #00875a; font-weight: 700;">SEBI 2FA PORTAL</div>
-            <h3 class="heading-style-h4" style="margin-top: 8px;">Client Login</h3>
-            <p style="color: #666; margin-top: 8px;">Access real-time capital gains, portfolio rebalancing, and Demat holdings.</p>
-            <a href="login.html" class="text-style-link" style="display: inline-block; margin-top: 16px; font-weight: 600; color: #222;">Sign In →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: SEARCH PORTAL FORM -->
-    <section class="section-home-benefit background-color-tertiary">
-      <div class="padding-global padding-section-small">
-        <div class="section-grid-x12">
-          <div class="col-span-12 margin-bottom">
-            <div class="text-size-small">Resource Search</div>
-            <h2 class="heading-style-h3">Search Stackly Knowledgebase & Securities</h2>
-          </div>
-
-          <div class="col-span-12">
-            <div class="calc-wrapper" style="background: #ffffff; padding: 2.5rem; border: 1px solid #e5e7eb; border-radius: 6px;">
-              <form id="resource-search-form" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <input type="text" class="w-input" placeholder="Search by scheme name, ISIN, manager, or regulatory circular..." style="flex: 1; min-width: 260px;" required>
-                <button type="submit" class="button is-dark w-button" style="padding: 12px 28px;">
-                  Search Platform
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: RECENT REGULATORY UPDATES -->
-    <section class="section-home-about background-color-alternate">
-      <div class="padding-global padding-section-small">
-        <div class="section-grid-x12">
-          <div class="col-span-12 margin-bottom">
-            <div class="text-size-small">SEBI Circulars</div>
-            <h2 class="heading-style-h3">Recent Regulatory Announcements & Disclosures</h2>
-          </div>
-
-          <div class="col-span-4" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px; background: #fff;">
-            <div class="text-size-small" style="color: #888;">01 OCT 2026</div>
-            <h3 class="heading-style-h4" style="margin-top: 8px;">T+1 Settlement for All Indian Cash Equities</h3>
-            <p style="color: #666; margin-top: 8px;">All NSE & BSE trade executions settle on T+1 basis with zero counterparty risk.</p>
-          </div>
-
-          <div class="col-span-4" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px; background: #fff;">
-            <div class="text-size-small" style="color: #888;">24 SEP 2026</div>
-            <h3 class="heading-style-h4" style="margin-top: 8px;">Mandatory 2FA OTP for Demat Access</h3>
-            <p style="color: #666; margin-top: 8px;">Client login security strengthened with time-based biometric and OTP verification.</p>
-          </div>
-
-          <div class="col-span-4" style="border: 1px solid #e4e4e4; padding: 2rem; border-radius: 4px; background: #fff;">
-            <div class="text-size-small" style="color: #888;">15 SEP 2026</div>
-            <h3 class="heading-style-h4" style="margin-top: 8px;">RBI Sovereign Gold Bond Tranche Allocation</h3>
-            <p style="color: #666; margin-top: 8px;">SGB Series 2026-I allotment completed with 2.5% annual sovereign interest credit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5: ESCALATION & SUPPORT -->
-    <section class="section-home-benefit background-color-tertiary">
-      <div class="padding-global padding-section-small">
-        <div class="section-grid-x12">
-          <div class="col-span-12 margin-bottom">
-            <div class="text-size-small">Need Assistance?</div>
-            <h2 class="heading-style-h3">Support Channels & Investor Grievance Escalation</h2>
-          </div>
-
-          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
-            <h3 class="heading-style-h4">Level 1: Client Concierge</h3>
-            <p style="color: #666; margin-top: 8px;">Instant answers on SIP modifications, CAS sheets, and bank mandate changes.</p>
-            <div style="font-weight: 600; color: #222; margin-top: 12px;">support@stackly.in</div>
-          </div>
-
-          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
-            <h3 class="heading-style-h4">Level 2: Compliance Officer</h3>
-            <p style="color: #666; margin-top: 8px;">Direct escalation to Principal Compliance Officer (SEBI RIA #INA200018420).</p>
-            <div style="font-weight: 600; color: #222; margin-top: 12px;">compliance@stackly.in</div>
-          </div>
-
-          <div class="col-span-4" style="background: #fff; padding: 2rem; border-radius: 4px; border: 1px solid #e4e4e4;">
-            <h3 class="heading-style-h4">Level 3: SEBI SCORES</h3>
-            <p style="color: #666; margin-top: 8px;">Lodge complaints on SEBI Online Redressal System (scores.sebi.gov.in).</p>
-            <div style="font-weight: 600; color: #222; margin-top: 12px;">SCORES Portal Online</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 6: INDIAN MARKET COVERAGE -->
-    <section class="section-home-about background-color-alternate">
-      <div class="padding-global padding-section-small">
-        <div class="section-grid-x12">
-          <div class="col-span-12 margin-bottom">
-            <div class="text-size-small">Market Breadth</div>
-            <h2 class="heading-style-h3">Securities Tracked Across Indian Exchanges</h2>
-          </div>
-
-          <div class="col-span-3" style="padding: 1.5rem; background: #f9f9f9; border-radius: 4px;">
-            <div class="text-size-large" style="font-weight: 700; color: #222;">2,500+</div>
-            <div style="color: #666; margin-top: 4px;">Direct Mutual Fund Schemes</div>
-          </div>
-
-          <div class="col-span-3" style="padding: 1.5rem; background: #f9f9f9; border-radius: 4px;">
-            <div class="text-size-large" style="font-weight: 700; color: #222;">500+</div>
-            <div style="color: #666; margin-top: 4px;">NSE / BSE Equities Audited</div>
-          </div>
-
-          <div class="col-span-3" style="padding: 1.5rem; background: #f9f9f9; border-radius: 4px;">
-            <div class="text-size-large" style="font-weight: 700; color: #222;">100%</div>
-            <div style="color: #666; margin-top: 4px;">RBI Sovereign Gold Bonds</div>
-          </div>
-
-          <div class="col-span-3" style="padding: 1.5rem; background: #f9f9f9; border-radius: 4px;">
-            <div class="text-size-large" style="font-weight: 700; color: #222;">₹0</div>
-            <div style="color: #666; margin-top: 4px;">Hidden Commission Fees</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7: FAQS -->
-    <section class="section-home-benefit background-color-tertiary">
-      <div class="padding-global padding-section-small">
-        <div class="section-grid-x12">
-          <div class="col-span-12 margin-bottom">
-            <div class="text-size-small">Common Questions</div>
-            <h2 class="heading-style-h3">Frequently Asked Questions</h2>
-          </div>
-
-          <div class="accordian">
-            <div class="accordian-cell is-open">
-              <div class="accordian-bar">
-                <div class="accordian-heading">Why did I reach this 404 page?</div>
-                <div class="icon-wrapper">+</div>
-              </div>
-              <div class="accordion-content">
-                <p>You may have followed an outdated link, typed a URL incorrectly, or clicked an action that is restricted to authenticated client sessions.</p>
-              </div>
-            </div>
-
-            <div class="accordian-cell">
-              <div class="accordian-bar">
-                <div class="accordian-heading">How do I access my Demat portfolio?</div>
-                <div class="icon-wrapper">+</div>
-              </div>
-              <div class="accordion-content">
-                <p>Click on the "Portal Login" button in the top navigation bar to authenticate securely with your 2FA OTP.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 8: BOTTOM CTA -->
-    <section class="section-home-cta is-relative">
-      <img src="assets/hero-home.webp" alt="Join Stackly" class="full-image-absolute">
-      <div class="image-overlay" style="opacity: 0.7;"></div>
-
-      <div class="padding-global padding-section-small is-full-height">
-        <div class="home-cta-wrapper">
-          <div class="max-width-large text-align-center">
-            <div class="cta-wrapper">
-              <h2 class="heading-style-h2">Start Compounding with Stackly.</h2>
-              <div class="text-size-regular">Join thousands of Indian investors building generational wealth with zero conflicts of interest.</div>
-              <a href="advisory.html" class="button w-button">Get Started with Advisory</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Vanguard Footer -->
-  <footer id="Footer" class="section-home-footer background-color-primary">
-    <div class="padding-global">
-      <div class="section-grid-x12 margin-bottom">
-        <div class="footer-heading">
-          <a href="index.html" class="nav-brand" style="margin-bottom: 1rem;">
-            <img src="assets/logo.webp" alt="Stackly" class="nav-brand-logo">
-            <span class="text-size-large" style="font-size: 1.75rem;">Stackly.</span>
-          </a>
-          <p class="text-size-small" style="color: #aaaaaa; line-height: 1.6;">
-            Institutional wealth management, direct mutual funds, and quantitative PMS engineered for India's high-net-worth investors.
-          </p>
-          <div style="margin-top: 1rem; font-size: 0.75rem; color: #777; line-height: 1.5;">
-            SEBI Registered RIA: INA200018420<br>
-            AMFI Registered Mutual Fund: ARN-194820<br>
-            CIN: U67190MH2024PTC394820
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <div class="footer-link-wrapper">
-            <div class="text-size-small text-weight-semibold">Investments</div>
-            <div class="footer-link-cell">
-              <a href="investments.html" class="text-style-link is-white">Direct Mutual Funds</a>
-              <a href="investments.html" class="text-style-link is-white">Equity Baskets</a>
-              <a href="investments.html" class="text-style-link is-white">Sovereign Gold Bonds</a>
-              <a href="investments.html" class="text-style-link is-white">Corporate Bonds</a>
-              <a href="404.html" class="text-style-link is-white">US Tech Feeder</a>
-            </div>
-          </div>
-
-          <div class="footer-link-wrapper">
-            <div class="text-size-small text-weight-semibold">Solutions</div>
-            <div class="footer-link-cell">
-              <a href="advisory.html" class="text-style-link is-white">Discretionary PMS</a>
-              <a href="advisory.html" class="text-style-link is-white">Family Office</a>
-              <a href="advisory.html" class="text-style-link is-white">NRI Wealth Desk</a>
-              <a href="advisory.html" class="text-style-link is-white">Tax Harvesting</a>
-              <a href="pricing.html" class="text-style-link is-white">Plans & Pricing</a>
-            </div>
-          </div>
-
-          <div class="footer-link-wrapper">
-            <div class="text-size-small text-weight-semibold">Company</div>
-            <div class="footer-link-cell">
-              <a href="about.html" class="text-style-link is-white">About Us</a>
-              <a href="about.html" class="text-style-link is-white">Leadership Team</a>
-              <a href="contact.html" class="text-style-link is-white">Contact & Lounges</a>
-              <a href="404.html" class="text-style-link is-white">Careers</a>
-              <a href="404.html" class="text-style-link is-white">Press & Media</a>
-            </div>
-          </div>
-
-          <div class="footer-link-wrapper">
-            <div class="text-size-small text-weight-semibold">Security & Legal</div>
-            <div class="footer-link-cell">
-              <a href="404.html" class="text-style-link is-white">SEBI Disclosures</a>
-              <a href="404.html" class="text-style-link is-white">Privacy Policy</a>
-              <a href="404.html" class="text-style-link is-white">Terms of Service</a>
-              <a href="404.html" class="text-style-link is-white">SCORES Grievance</a>
-              <a href="404.html" class="text-style-link is-white">Cybersecurity Audit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="line-divider"></div>
-
-      <div class="footer-credential-wrapper is-margined-vertical">
-        <div>
-          © 2026 Stackly Wealth Technologies Pvt. Ltd. All rights reserved.
-        </div>
-        <div class="footer-credential-cell">
-          <a href="404.html" class="text-style-link is-white">Style Guide</a>
-          <a href="404.html" class="text-style-link is-white">Licensing</a>
-          <a href="404.html" class="text-style-link is-white">Regulatory Filings</a>
-        </div>
-      </div>
-
-      <div style="font-size: 0.6875rem; color: #666666; line-height: 1.6; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
-        *Disclaimer: Mutual fund investments are subject to market risks. Read all scheme related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-  <script src="js/auth.js"></script>
 </body>
 </html>
